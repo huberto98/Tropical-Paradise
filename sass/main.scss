@@ -130,6 +130,14 @@ body {
 	animation: navItemsAnimation 1s both;
 }
 
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+	background-color: $dark;
+}
+
+
 // HEADER
 .header {
 	position: relative;
@@ -462,7 +470,8 @@ body {
 	&__form-textarea {
 		@include contactForm;
 
-		max-width: 100%;@include contactForm;
+		max-width: 100%;
+		@include contactForm;
 		min-width: 100%;
 		width: 100%;
 		min-height: 150px;
@@ -485,7 +494,7 @@ body {
 	}
 }
 
-// FOOTER 
+// FOOTER
 .footer {
 	color: $pure-white;
 	background-color: $dark;
@@ -509,15 +518,15 @@ body {
 	}
 
 	&__box-social {
-		margin: 2em 0 1em
+		margin: 2em 0 1em;
 	}
 
 	&__box-link {
-		padding: 0 .3em;
+		padding: 0 0.3em;
 		text-decoration: none;
 		font-size: 3.6rem;
 		color: $pure-white;
-		transition: color .3s;
+		transition: color 0.3s;
 
 		&:first-child {
 			padding-left: 0;
@@ -533,6 +542,7 @@ body {
 		text-align: center;
 	}
 }
+
 
 // =====================
 // MEDIA
